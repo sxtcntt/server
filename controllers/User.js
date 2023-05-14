@@ -7,7 +7,6 @@ import fs from 'fs'
 
 export const register = async (req,res)=>{
     try {
-        console.log('-----',res);
         const  {name, email, password} = req.body;
         const avatar = req.files.avatar.tempFilePath;
         let user = await User.findOne({email});

@@ -59,7 +59,6 @@ export const sendMail = async(email, subject, text)=>{
         text, // Phần nội dung mail mình sẽ dùng html thay vì thuần văn bản thông thường.
     }
       let info =await transport.sendMail(options);
-      console.log(info);
     } catch (error) {
         console.log("Error Send Mail: ",error);
     }

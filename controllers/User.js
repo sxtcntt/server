@@ -2,7 +2,7 @@ import { User } from "../models/users.js";
 import { sendMail } from "../utils/sendMail.js";
 import { sendToken } from "../utils/sendToken.js";
 import cloudinary from 'cloudinary';
-import fs from 'fs'
+import fs from 'fs';
 // import bcrypt from 'bcrypt';
 
 export const register = async (req,res)=>{
